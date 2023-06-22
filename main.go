@@ -162,27 +162,6 @@ func main() {
 	rootMutation := graphql.ObjectConfig{
 		Name:   "RootMutation",
 		Fields: fields,
-		// Fields: graphql.Fields{
-		// 	"createChildProfile": &graphql.Field{
-		// 		Type:        childprofileObject,
-		// 		Description: "Create a new child profile",
-		// 		Args: graphql.FieldConfigArgument{
-		// 			"givenName": &graphql.ArgumentConfig{
-		// 				Type: graphql.NewNonNull(graphql.String),
-		// 			},
-		// 			"middleName": &graphql.ArgumentConfig{
-		// 				Type: graphql.String,
-		// 			},
-		// 			"familyName": &graphql.ArgumentConfig{
-		// 				Type: graphql.NewNonNull(graphql.String),
-		// 			},
-		// 			"birthDate": &graphql.ArgumentConfig{
-		// 				Type: graphql.NewNonNull(graphql.String),
-		// 			},
-		// 		},
-		// 		Resolve: createChildProfile,
-		// 	},
-		// },
 	}
 
 	// Define the schema
