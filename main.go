@@ -23,19 +23,9 @@ type ChildProfile struct {
 
 var db *pgx.Conn
 
-// const (
-// 	dbHost     = "database-1.cluster-c4vnvehic8i0.us-east-1.rds.amazonaws.com"
-// 	dbPort     = "5432"
-// 	dbName     = "postgres"
-// 	dbUser     = "postgres"
-// 	dbPassword = "password"
-// )
-
 func initDB() error {
 	config, err := pgx.ParseConfig("postgres://postgres:postgrespassword@localhost:5432/postgres")
-
-	// config, err := pgx.ParseConfig(fmt.Sprintf("postgres://%s:%s@%s:%s/%s", dbUser, dbPassword, dbHost, dbPort, dbName))
-
+	
 	if err != nil {
 		return err
 	}
