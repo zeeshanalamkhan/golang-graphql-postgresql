@@ -36,3 +36,16 @@ query{
     birthDate
   }
 }
+
+
+SQL
+CREATE SCHEMA child;
+
+
+CREATE TABLE child.person(
+  id uuid NOT NULL,
+  given_name text NOT NULL,
+  middle_name text,
+  family_name text NOT NULL,
+  birthdate text NOT NULL
+)
